@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 :root {
   --primary-light-clr: #fa7436;
   --primary-dark-clr: #222222;
@@ -10,6 +11,7 @@
   --text-300: #e5e5e5;
   --text-200: #f7f8fc;
   --text-100: #fefcfb;
+  --main-duration: 0.3s;
 }
 
 * {
@@ -23,7 +25,7 @@ html {
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Lato", serif;
 }
 
 .container {
@@ -31,20 +33,144 @@ body {
   margin-inline: auto;
 }
 
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 720px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1140px;
   }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.hide {
+  display: none;
+}
+
+/* Start Header */
+
+header {
+  padding-top: 30px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  gap: 48px;
+}
+
+header nav ul a {
+  position: relative;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-900);
+}
+
+header nav ul a:not(.active):hover::before {
+  opacity: 1;
+}
+
+header nav ul a::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background-color: var(--primary-light-clr);
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: var(--main-duration);
+}
+
+header nav ul a.active {
+  color: var(--primary-light-clr);
+}
+
+header nav ul a.active::before {
+  opacity: 1;
+}
+
+header .controls button {
+  background-color: var(--primary-light-clr);
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+}
+
+header .controls button span {
+  width: 100%;
+  height: 3px;
+  display: block;
+  background-color: var(--text-100);
+}
+
+header .controls button span:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+
+header .controls p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header .controls p a {
+  font-weight: 400;
+  color: var(--primary-light-clr);
+}
+
+/* Start intro-info */
+
+.intro-info .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.intro-info .container .main-intro {
+  font-size: 72px;
+  width: 50%;
+}
+
+.intro-info .container .main-intro span {
+  color: var(--primary-light-clr);
+}
+
+.intro-info .container .desc {
+  width: 50%;
 }
