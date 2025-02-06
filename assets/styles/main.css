@@ -1,0 +1,50 @@
+:root {
+  --primary-light-clr: #fa7436;
+  --primary-dark-clr: #222222;
+  --secondary-blue-clr: #4086f4;
+  --secondary-yellow-clr: #ffb60a;
+  --text-900: #222222;
+  --text-700: #444444;
+  --text-500: #666666;
+  --text-400: #999999;
+  --text-300: #e5e5e5;
+  --text-200: #f7f8fc;
+  --text-100: #fefcfb;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

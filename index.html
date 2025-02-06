@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/images/fiv-icon.png" />
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <title>Travel Agency Landing</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img
+          src="assets/images/Logo.png"
+          alt="Travel Agency Logo"
+          class="logo"
+        />
+        <nav>
+          <ul>
+            <li><a href="#" class="active" target="_blank">home</a></li>
+            <li><a href="#" target="_blank">about us</a></li>
+            <li><a href="#" target="_blank">tour packages</a></li>
+            <li><a href="#" target="_blank">our services</a></li>
+            <li><a href="#" target="_blank">gallery</a></li>
+            <li><a href="#" target="_blank">contact</a></li>
+          </ul>
+        </nav>
+        <div class="controls">
+          <button id="mobile-menu" class="hide">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <p>
+            <img src="assets/images/Phone-icon.png" alt="Phone-icon" />
+            <span>+111 - 0258211</span>
+          </p>
+        </div>
+      </div>
+    </header>
+    <div class="intro-info">
+      <div class="container">
+        <div class="main-intro">
+          <p>
+            It’s a Big World ,<br />
+            Out There, <span>Go</span> <br />
+            <span>Explore</span>
+          </p>
+        </div>
+        <div class="desc">
+          <p>
+            Time tracking software used by millions. A simple time tracker and
+            timesheet app that lets you track work hours across projects......
+          </p>
+          <a href="#" target="_blank">discover now</a>
+        </div>
+      </div>
+    </div>
+    <div class="intro-video">
+      <div class="container">
+        <div class="video">
+          <video
+            src="assets/video/intro.mp4"
+            poster="assets/images/intro-video-thump.png"
+          ></video>
+          <div class="controls">
+            <img src="assets/images/play-arrow.png" alt="play-arrow" />
+          </div>
+        </div>
+        <div class="social-links">
+          <p>
+            Follow Us
+            <span class="line"></span>
+          </p>
+          <div class="links">
+            <a href="#">
+              <img src="assets/images/Twitter.png" alt="Twitter" />
+            </a>
+            <a href="#">
+              <img src="assets/images/Youtube.png" alt="Youtube" />
+            </a>
+            <a href="#">
+              <img src="assets/images/Instagram.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+        <div class="explore-form">
+          <form action="">
+            <div class="column">
+              <label for="from-input">From</label>
+              <div>
+                <img src="assets/images/address.png" alt="address" />
+                <select name="from" id="from-input">
+                  <option value="Bali, Indonesia">Bali, Indonesia</option>
+                </select>
+              </div>
+            </div>
+            <div class="column">
+              <label for="to-input">To</label>
+              <div>
+                <img src="assets/images/address.png" alt="address" />
+                <select name="to" id="to-input">
+                  <option value="Bali, Indonesia">Bali, Indonesia</option>
+                </select>
+              </div>
+            </div>
+            <div class="column">
+              <label for="date">Date</label>
+              <div>
+                <img src="assets/images/Date.png" alt="date" />
+                <select name="date" id="date">
+                  <option value="">Select a date range</option>
+                </select>
+              </div>
+            </div>
+            <div class="column">
+              <label for="guest">Guest</label>
+              <div>
+                <img src="assets/images/guest.png" alt="guest" />
+                <select name="guest" id="guest">
+                  <option value="">Select a date range</option>
+                </select>
+              </div>
+            </div>
+            <div class="column">
+              <img src="assets/images/Search.png" alt="Search" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="about-us">
+      <div class="container">
+        <div class="about-us-img">
+          <img src="assets/images/about-us.png" alt="about-us" />
+        </div>
+        <div class="content">
+          <h2>About Us</h2>
+          <p>
+            The Best And Most<br />
+            trusted <span>service</span>
+          </p>
+          <p>
+            We are the largest holiday service provider in the world with
+            partners and places spread all over the world by prioriti-zing
+            service and customer satisfaction.
+          </p>
+          <a href="#">Learn More</a>
+          <div class="statistics">
+            <p>
+              <span
+                >200+ Customer<br />
+                & partners</span
+              >
+              <span
+                >500+ Place in<br />
+                the world</span
+              >
+              <span
+                >1k+ Success <br />
+                Journey</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="best-places">
+      <div class="container">
+        <h2>The best place for vacation</h2>
+        <div class="places-filter">
+          <ul>
+            <li data-priority="Special_Deals" class="active">Special Deals</li>
+            <li data-priority="Populer">Populer</li>
+            <li data-priority="Recommendation">Recommendation</li>
+            <li data-priority="Best_Price">Best Price</li>
+          </ul>
+        </div>
+        <div class="places">
+          <div class="place">
+            <img src="assets/images/place-1.png" alt="place-1" />
+            <div class="content">
+              <div>
+                <span>
+                  <img src="assets/images/address.png" alt="address" />
+                  Maldives
+                </span>
+                <span>
+                  <img src="assets/images/star.png" alt="star" />
+                  4.7
+                </span>
+              </div>
+              <h3>Hurawalhi Island</h3>
+              <span>7 Days Tour on 2 person</span>
+              <div>
+                <span>620$</span>
+                <a href="#">
+                  View More
+                  <img src="assets/images/arrow-back.png" alt="arrow-back" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="place">
+            <img src="assets/images/place-1.png" alt="place-1" />
+            <div class="content">
+              <div>
+                <span>
+                  <img src="assets/images/address.png" alt="address" />
+                  Maldives
+                </span>
+                <span>
+                  <img src="assets/images/star.png" alt="star" />
+                  4.7
+                </span>
+              </div>
+              <h3>Hurawalhi Island</h3>
+              <span>7 Days Tour on 2 person</span>
+              <div>
+                <span>620$</span>
+                <a href="#">
+                  View More
+                  <img src="assets/images/arrow-back.png" alt="arrow-back" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="place">
+            <img src="assets/images/place-1.png" alt="place-1" />
+            <div class="content">
+              <div>
+                <span>
+                  <img src="assets/images/address.png" alt="address" />
+                  Maldives
+                </span>
+                <span>
+                  <img src="assets/images/star.png" alt="star" />
+                  4.7
+                </span>
+              </div>
+              <h3>Hurawalhi Island</h3>
+              <span>7 Days Tour on 2 person</span>
+              <div>
+                <span>620$</span>
+                <a href="#">
+                  View More
+                  <img src="assets/images/arrow-back.png" alt="arrow-back" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="place">
+            <img src="assets/images/place-1.png" alt="place-1" />
+            <div class="content">
+              <div>
+                <span>
+                  <img src="assets/images/address.png" alt="address" />
+                  Maldives
+                </span>
+                <span>
+                  <img src="assets/images/star.png" alt="star" />
+                  4.7
+                </span>
+              </div>
+              <h3>Hurawalhi Island</h3>
+              <span>7 Days Tour on 2 person</span>
+              <div>
+                <span>620$</span>
+                <a href="#">
+                  View More
+                  <img src="assets/images/arrow-back.png" alt="arrow-back" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="place">
+            <img src="assets/images/place-1.png" alt="place-1" />
+            <div class="content">
+              <div>
+                <span>
+                  <img src="assets/images/address.png" alt="address" />
+                  Maldives
+                </span>
+                <span>
+                  <img src="assets/images/star.png" alt="star" />
+                  4.7
+                </span>
+              </div>
+              <h3>Hurawalhi Island</h3>
+              <span>7 Days Tour on 2 person</span>
+              <div>
+                <span>620$</span>
+                <a href="#">
+                  View More
+                  <img src="assets/images/arrow-back.png" alt="arrow-back" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="place">
+            <img src="assets/images/place-1.png" alt="place-1" />
+            <div class="content">
+              <div>
+                <span>
+                  <img src="assets/images/address.png" alt="address" />
+                  Maldives
+                </span>
+                <span>
+                  <img src="assets/images/star.png" alt="star" />
+                  4.7
+                </span>
+              </div>
+              <h3>Hurawalhi Island</h3>
+              <span>7 Days Tour on 2 person</span>
+              <div>
+                <span>620$</span>
+                <a href="#">
+                  View More
+                  <img src="assets/images/arrow-back.png" alt="arrow-back" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="place">
+            <img src="assets/images/place-1.png" alt="place-1" />
+            <div class="content">
+              <div>
+                <span>
+                  <img src="assets/images/address.png" alt="address" />
+                  Maldives
+                </span>
+                <span>
+                  <img src="assets/images/star.png" alt="star" />
+                  4.7
+                </span>
+              </div>
+              <h3>Hurawalhi Island</h3>
+              <span>7 Days Tour on 2 person</span>
+              <div>
+                <span>620$</span>
+                <a href="#">
+                  View More
+                  <img src="assets/images/arrow-back.png" alt="arrow-back" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="place">
+            <img src="assets/images/place-1.png" alt="place-1" />
+            <div class="content">
+              <div>
+                <span>
+                  <img src="assets/images/address.png" alt="address" />
+                  Maldives
+                </span>
+                <span>
+                  <img src="assets/images/star.png" alt="star" />
+                  4.7
+                </span>
+              </div>
+              <h3>Hurawalhi Island</h3>
+              <span>7 Days Tour on 2 person</span>
+              <div>
+                <span>620$</span>
+                <a href="#">
+                  View More
+                  <img src="assets/images/arrow-back.png" alt="arrow-back" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="place">
+            <img src="assets/images/place-1.png" alt="place-1" />
+            <div class="content">
+              <div>
+                <span>
+                  <img src="assets/images/address.png" alt="address" />
+                  Maldives
+                </span>
+                <span>
+                  <img src="assets/images/star.png" alt="star" />
+                  4.7
+                </span>
+              </div>
+              <h3>Hurawalhi Island</h3>
+              <span>7 Days Tour on 2 person</span>
+              <div>
+                <span>620$</span>
+                <a href="#">
+                  View More
+                  <img src="assets/images/arrow-back.png" alt="arrow-back" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#">View All</a>
+      </div>
+    </div>
+    <div class="why-us">
+      <div class="container">
+        <div class="intro-info">
+          <h2>Why <span>Choose</span> Us</h2>
+          <p>
+            We ensure that you’ll embark on a perfectly planned, safe vacation
+            at a price you can afford.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="feature">
+          <div>
+            <img src="assets/images/why-us-badge1.png" alt="why-us-badge1" />
+            <h3>Best Travel Agency</h3>
+            <p>
+              Travel agencies that provide round trip, one way, and multi trip
+              services.
+            </p>
+          </div>
+          <div>
+            <img src="assets/images/why-us-badge2.png" alt="why-us-badge2" />
+            <h3>Competitive Price</h3>
+            <p>
+              The price offered are affordable starting from the ordinary to the
+              exclusive.
+            </p>
+          </div>
+          <div>
+            <img src="assets/images/why-us-badge3.png" alt="why-us-badge3" />
+            <h3>Global Coverage</h3>
+            <p>
+              There are many tourist attractions, hotels and interesting
+              entertainment.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="videos">
+          <div class="video" class="active">
+            <video
+              src="assets/video/intro.mp4"
+              poster="assets/images/Video-thump-2.png"
+            ></video>
+          </div>
+          <div class="video" class="active">
+            <video
+              src="assets/video/intro.mp4"
+              poster="assets/images/Video-thump-1.png"
+            ></video>
+          </div>
+          <div class="video" class="active">
+            <video
+              src="assets/video/intro.mp4"
+              poster="assets/images/Video-thump-3.png"
+            ></video>
+          </div>
+        </div>
+        <div class="slider-control">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us">
+      <div class="container">
+        <h2>
+          Contact us to review <br />
+          <span>your experience</span> with us
+        </h2>
+        <p>
+          Give us feedback and let us know what experiences you had while on
+          vacation with us
+        </p>
+        <div class="reviews">
+          <div class="review">
+            <p>
+              Wow, what a fun vacation with Oelinken, guided by professional
+              people
+            </p>
+            <div class="reviwer-info">
+              <img src="assets/images/reviwer1.png" alt="reviwer1" />
+              <div>
+                <h3>Benjamin Robert</h3>
+                <div class="rates">
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star2.png" alt="start2" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <p>
+              Wow, what a fun vacation with Oelinken, guided by professional
+              people
+            </p>
+            <div class="reviwer-info">
+              <img src="assets/images/reviwer1.png" alt="reviwer1" />
+              <div>
+                <h3>Benjamin Robert</h3>
+                <div class="rates">
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star2.png" alt="start2" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <p>
+              Wow, what a fun vacation with Oelinken, guided by professional
+              people
+            </p>
+            <div class="reviwer-info">
+              <img src="assets/images/reviwer1.png" alt="reviwer1" />
+              <div>
+                <h3>Benjamin Robert</h3>
+                <div class="rates">
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star2.png" alt="start2" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <p>
+              Wow, what a fun vacation with Oelinken, guided by professional
+              people
+            </p>
+            <div class="reviwer-info">
+              <img src="assets/images/reviwer1.png" alt="reviwer1" />
+              <div>
+                <h3>Benjamin Robert</h3>
+                <div class="rates">
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star3.png" alt="start" />
+                  <img src="assets/images/star2.png" alt="start2" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-control">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="our-bog">
+      <div class="container">
+        <div>
+          <h2>Our Blog</h2>
+          <div>
+            <p>
+              Stay up to date with the latest tech trands and news in the pets.
+            </p>
+            <a href="#">View All</a>
+          </div>
+        </div>
+        <div class="blogs">
+          <div class="blog">
+            <a href="#">
+              <div class="head">
+                <span>21 june 2021</span>
+                <img src="assets/images/blog-img.png" alt="blog-img" />
+              </div>
+              <div class="content">
+                <h3>The Amazing Difference a Year of Travelling .</h3>
+                <p>
+                  There isn’t a relationship around that can survive without
+                  trust. My relationship with my dog Peyton is deep...
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="blog">
+            <a href="#">
+              <div class="head">
+                <span>28 june 2021 </span>
+                <img src="assets/images/blog-img2.png" alt="blog-img" />
+              </div>
+              <div class="content">
+                <h3>Reflections on 5 Months of Travel: Time to Hang.</h3>
+                <p>
+                  Doting pet parents have a relentless need to constantly
+                  photograph every adorable pet moment...
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="blog">
+            <a href="#">
+              <div class="head">
+                <span>10 july 2021</span>
+                <img src="assets/images/blog-img3.png" alt="blog-img" />
+              </div>
+              <div class="content">
+                <h3>How to Save Money While Visiting Africa .</h3>
+                <p>
+                  It is easy to forget that animals are living creatures with a
+                  beating heart.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="collaborating-companies">
+      <div class="container">
+        <a href="#" target="_blank">
+          <img src="assets/images/Airbnb-Logo.png" alt="Airbnb-Logo" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="assets/images/Amazon-Logo.png" alt="Amazon-Logo" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="assets/images/FedEx-Logo.png" alt="FedEx-Logo" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="assets/images/Google-Logo.png" alt="Google-Logo" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="assets/images/Microsoft-Logo.png" alt="Microsoft-Logo" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="assets/images/OLAlogo.png" alt="OLAlogo" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="assets/images/Walmart-Logo.png" alt="Walmart-Logo" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="assets/images/OYO-Logo.png" alt="OYO-Logo" />
+        </a>
+      </div>
+    </div>
+    <footer>
+      <div class="container content">
+        <div class="company-info">
+          <img src="assets/images/Logo.png" alt="logo" />
+          <p>
+            We believe brand interaction is key in commu- nication. Real
+            innovations and a positive.
+          </p>
+          <div class="social-links">
+            <a href="#">
+              <img src="assets/images/Twitter.png" alt="Twitter" />
+            </a>
+            <a href="#">
+              <img src="assets/images/Youtube.png" alt="Youtube" />
+            </a>
+            <a href="#">
+              <img src="assets/images/Instagram.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+        <div class="links">
+          <ul>
+            <h3>About us</h3>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">FAQ’s</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+          <ul>
+            <h3>Company</h3>
+            <li><a href="#">Core values</a></li>
+            <li><a href="#">Partner w/ us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul>
+            <h3>Support</h3>
+            <li><a href="#">Support centes</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+          <div class="get-in-touch">
+            <h3>Get in touch</h3>
+            <input type="text" placeholder="Your email here..." />
+            <button>Get Access</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="privacy-policy">
+      <div class="container">
+        <p>TravelAgent © <span id="year">2022</span> All Right Reserved</p>
+        <p>
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>
