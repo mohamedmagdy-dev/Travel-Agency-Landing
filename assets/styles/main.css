@@ -174,6 +174,7 @@ header .controls button {
   outline: none;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 header .controls button span {
@@ -228,7 +229,7 @@ header .controls p a {
   position: relative;
   font-size: 72px;
   width: 50%;
-  font-size: 400;
+  font-weight: 400;
   line-height: 100px;
   color: var(--text-900);
 }
@@ -336,6 +337,8 @@ header .controls p a {
 .intro-video .explore-form form {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 28px;
   padding: 28px;
 }
@@ -419,6 +422,7 @@ header .controls p a {
 .about-us .container {
   padding-top: 80px;
   display: flex;
+  align-items: center;
   gap: 120px;
   position: relative;
 }
@@ -961,7 +965,7 @@ header .controls p a {
 }
 
 .our-bog .container .blog .head {
-  height: 362px;
+  min-height: 362px;
 
   border-radius: 12px;
   padding-top: 24px;
