@@ -49,6 +49,35 @@
 }
 
 @media (max-width: 991px) {
+  header .container {
+    position: relative;
+  }
+
+  header .container nav {
+    display: none;
+    position: absolute;
+    top: 59px;
+    right: 15px;
+    z-index: 9;
+  }
+
+  header .container nav ul {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    border: 2px solid var(--primary-light-clr);
+  }
+
+  header .container nav ul li {
+    padding: 15px 20px;
+  }
+
+  header .container nav ul li:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+  }
+
   header .controls {
     display: flex;
     gap: 30px;
@@ -57,5 +86,183 @@
 
   header .controls button {
     display: block;
+  }
+
+  .intro-info {
+    margin-bottom: 50px;
+  }
+
+  .intro-info .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0px;
+  }
+
+  .intro-info {
+    overflow: hidden;
+  }
+
+  .intro-info .container .main-intro,
+  .intro-info .container .desc {
+    width: 100%;
+  }
+
+  .intro-info .container .desc a {
+    margin-inline: auto;
+  }
+
+  .intro-video .explore-form {
+    width: 100%;
+    top: 20px;
+  }
+
+  .intro-video .explore-form form {
+    justify-content: flex-start;
+  }
+
+  .intro-video .social-links {
+    display: none;
+  }
+
+  .about-us .container {
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 50px;
+  }
+
+  .best-places {
+    overflow: hidden;
+  }
+
+  .why-us .container {
+    flex-direction: column;
+  }
+
+  .collaborating-companies .container div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-us {
+    overflow: hidden;
+  }
+
+  .our-bog::before,
+  .our-bog::after {
+    display: none;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  footer .container .links {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  footer .container .links ul {
+    padding: 0;
+  }
+
+  .privacy-policy .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  header .container nav {
+    width: calc(100% - 30px);
+  }
+
+  .intro-video .explore-form form {
+    justify-content: center;
+  }
+
+  .intro-video .explore-form form .column,
+  .intro-video .explore-form form .column div {
+    width: 100%;
+  }
+
+  .intro-video .explore-form .column button {
+    margin: 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  .about-us .container {
+    overflow: hidden;
+  }
+
+  .about-us .content p:has(span) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .about-us .container .about-us-img {
+    width: 100%;
+  }
+
+  .about-us .content .statistics {
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .best-places .container h2 {
+    text-align: center;
+  }
+
+  .best-places .container .places-filter ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .why-us .feature {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .why-us .feature div {
+    padding: 0;
+  }
+
+  .why-us .feature div:not(:last-of-type) {
+    border: none;
+    border-bottom: 1px solid #e4e4e7a1;
+  }
+
+  .why-us .video-preview {
+    padding-inline: 15px;
+  }
+
+  .why-us .video-preview .videos .video {
+    display: none;
+  }
+
+  .why-us .video-preview .videos .video.currant {
+    display: block;
+  }
+
+  .contact-us h2,
+  .best-places .container h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .our-bog .container .blogs {
+    grid-template-columns: 1fr;
+  }
+
+  .our-bog .container .blogs .head {
+    min-height: fit-content;
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .privacy-policy .container {
+    justify-content: center;
   }
 }
